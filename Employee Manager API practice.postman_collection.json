@@ -1,0 +1,256 @@
+{
+	"info": {
+		"_postman_id": "76a5081b-feb8-4a9b-9b9e-b445c1d33678",
+		"name": "Employee Manager API practice",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Get all employees",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"id": "62788752-d02c-49ac-b268-835f6a6525a1",
+						"exec": [
+							"pm.test(\"Status code 200 ok\", function() {",
+							"    pm.response.to.be.ok;",
+							"});",
+							"pm.test(\"Text is correct\", function() {",
+							"    pm.expect(pm.response.text()).to.include(\"Allie\")",
+							"})"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://peaceful-inlet-88854.herokuapp.com/api/employees/",
+					"protocol": "https",
+					"host": [
+						"peaceful-inlet-88854",
+						"herokuapp",
+						"com"
+					],
+					"path": [
+						"api",
+						"employees",
+						""
+					],
+					"query": [
+						{
+							"key": "id",
+							"value": "50",
+							"disabled": true
+						},
+						{
+							"key": "search",
+							"value": "Annie Edison",
+							"disabled": true
+						}
+					]
+				},
+				"description": "Get request for all employees"
+			},
+			"response": []
+		},
+		{
+			"name": "Post new employee",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"id": "80cbaac0-cba3-4286-9614-e1fad69a418d",
+						"exec": [
+							"pm.test(\"Status code 200 ok\", function() {",
+							"    pm.response.to.be.ok;",
+							"});",
+							"pm.test(\"Text is correct\", function() {",
+							"    pm.expect(pm.response.text()).to.include(\"Pierce\")",
+							"})"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"id\": \"789488812\",\n\t\"name\": \"Pierce Hawthorne\",\n\t\"phone\": \"1281271234\",\n\t\"email\": \"streetsahead@gmail.com\",\n\t\"title\": \"student/businessman\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://peaceful-inlet-88854.herokuapp.com/api/employees/",
+					"protocol": "https",
+					"host": [
+						"peaceful-inlet-88854",
+						"herokuapp",
+						"com"
+					],
+					"path": [
+						"api",
+						"employees",
+						""
+					]
+				},
+				"description": "Post new employee in employee manager"
+			},
+			"response": []
+		},
+		{
+			"name": "Delete an employee",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"id": "d7dbf8f3-7cc6-41a0-9f9c-e0d9f9efdfa3",
+						"exec": [
+							"pm.test(\"Status code 200 ok\", function() {",
+							"    pm.response.to.be.ok;",
+							"});",
+							"pm.test(\"Text is correct\", function() {",
+							"    pm.expect(pm.response.text()).to.not.contain(\"Pierce\")",
+							"})"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://peaceful-inlet-88854.herokuapp.com/api/employees/789488812",
+					"protocol": "https",
+					"host": [
+						"peaceful-inlet-88854",
+						"herokuapp",
+						"com"
+					],
+					"path": [
+						"api",
+						"employees",
+						"789488812"
+					],
+					"query": [
+						{
+							"key": "",
+							"value": "Annie Edison",
+							"disabled": true
+						},
+						{
+							"key": "phone",
+							"value": "4444444444",
+							"disabled": true
+						},
+						{
+							"key": "email",
+							"value": "iamnotannieedison@yahoo.com",
+							"disabled": true
+						},
+						{
+							"key": "title",
+							"value": "fbi full time",
+							"disabled": true
+						}
+					]
+				},
+				"description": "Delete an employee in employee manager"
+			},
+			"response": []
+		},
+		{
+			"name": "Edit employee",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"id": "6e0b611a-4083-46df-afb5-e99e56e379b6",
+						"exec": [
+							"pm.test(\"Status code 200 ok\", function() {",
+							"    pm.response.to.be.ok;",
+							"});",
+							"pm.test(\"Text is correct\", function() {",
+							"    pm.expect(pm.response.text()).to.include(\"9999999999\")",
+							"})"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "https://peaceful-inlet-88854.herokuapp.com/api/employees/588?name=Annie Edison&email=iamnotannieedison@yahoo.co&title=FBI full time&phone=9999999999",
+					"protocol": "https",
+					"host": [
+						"peaceful-inlet-88854",
+						"herokuapp",
+						"com"
+					],
+					"path": [
+						"api",
+						"employees",
+						"588"
+					],
+					"query": [
+						{
+							"key": "name",
+							"value": "Annie Edison"
+						},
+						{
+							"key": "email",
+							"value": "iamnotannieedison@yahoo.co"
+						},
+						{
+							"key": "title",
+							"value": "FBI full time"
+						},
+						{
+							"key": "phone",
+							"value": "9999999999"
+						}
+					]
+				},
+				"description": "edit employee in employee manager full time"
+			},
+			"response": []
+		}
+	],
+	"protocolProfileBehavior": {}
+}
