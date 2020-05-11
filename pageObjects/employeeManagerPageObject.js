@@ -7,24 +7,24 @@ var employeeManagerCommands = {
     },
     editEmployee: function (employeeName, employeePhone, employeeEmail, employeeTitle) {
         if (employeeName) {
-        this
-            .clearValue('@nameField')
-            .setValue('@nameField', employeeName)
+            this
+                .clearValue('@nameField')
+                .setValue('@nameField', employeeName)
         }
         if (employeePhone) {
-        this
-            .clearValue('@phoneField')
-            .setValue('@phoneField', employeePhone)
+            this
+                .clearValue('@phoneField')
+                .setValue('@phoneField', employeePhone)
         }
         if (employeeEmail) {
-        this
-            .clearValue('@emailField')
-            .setValue('@emailField', employeeEmail)
+            this
+                .clearValue('@emailField')
+                .setValue('@emailField', employeeEmail)
         }
         if (employeeTitle) {
-        this
-            .clearValue('@titleField')
-            .setValue('@titleField', employeeTitle)
+            this
+                .clearValue('@titleField')
+                .setValue('@titleField', employeeTitle)
         }
         this
             .click('@saveButton')
@@ -61,7 +61,7 @@ var employeeManagerCommands = {
             .expect.element('@nameField').value.to.not.equal('This will be deleted')
     },
     addAnEmployeeCard: function () {
-        this   
+        this
             .click('@addEmployeeButton')
             .pause(3000)
             .click('@lastEmployeeListed')
@@ -72,7 +72,7 @@ var employeeManagerCommands = {
             .expect.element('@emailField').value.to.equal('abc')
         this
             .expect.element('@titleField').value.to.equal('New Employee')
-        
+
     },
     changesNotSavedIfCancelIsClicked: function () {
         let name = ''
@@ -193,6 +193,7 @@ var employeeManagerCommands = {
             .clearValue('@titleField')
             .setValue('@titleField', employeeTitle)
             .click('@saveButton')
+            .pause(3000)
         this
             .expect.element('@nameField').to.have.value.that.equals(employeeName)
         this
@@ -203,7 +204,7 @@ var employeeManagerCommands = {
             .expect.element('@titleField').to.have.value.that.equals(employeeTitle)
         return this
     }
-    }
+}
 
 
 
@@ -245,7 +246,7 @@ module.exports = {
         },
         firstEmployeeResultFromFilterSearch: {
             selector: '//ul/li[2]',
-            locateStrategy:'xpath'
+            locateStrategy: 'xpath'
         }
     }
 }
