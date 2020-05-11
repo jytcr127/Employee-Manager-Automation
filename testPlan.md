@@ -1,4 +1,4 @@
-#Employee Manager v2 Test Plan
+# Employee Manager v2 Test Plan
 ## Overview:
 
 An employee management application is being tested to determine its ability to keep track of employee ids, names, phone numbers, and titles, as well as changes to those categories(except employee id).
@@ -18,7 +18,7 @@ The information stored in the application will be saved in a database. Users sho
 [Postman collection](https://github.com/jytcr127/Employee-Manager-v2/blob/master/Employee%20Manager%20API%20practice.postman_collection.json)
 	
 
-##What’s included:
+## What’s included:
 Feature: Click employee name from employee list to bring up card with ids in ascending order, name, phone number, email address, and title
 Method: Click on employee names from employee list to verify that cards are loaded with id numbers in ascending order
 Test Number: 3
@@ -182,7 +182,7 @@ The clear button will empty the search field and revert to display ALL employees
 
 Adding, modifying, or deleting employees while the search field is populated will update the results.
 
-##Entry Criteria: 
+## Entry Criteria: 
 
 
 Acceptance Criteria provided
@@ -191,7 +191,7 @@ Tests have been created
 
 Main functions of application are defined
 
-##Exit Criteria:
+## Exit Criteria:
 
 All employee cards contain correct fields, values, and functions
 
@@ -199,11 +199,11 @@ Feature pass test cases
 
 Budget runs out
 
-##Other details:
+## Other details:
 A modern browser(after I.E 8) should be used to test the application. Google Chrome is recommended. 
 Tester should have node and git installed
 
-##Bugs
+## Bugs
 
 Bug 1: The email address field input field will accept a value greater than 30 characters with no error message. The field value will appear to be saved if the user never reloads the page. However,  if the page is reloaded, the change is not saved.
 
