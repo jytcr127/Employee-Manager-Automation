@@ -11,11 +11,12 @@ Links:
 
 Application: https://devmountain-qa.github.io/employee-manager-v2/build/index.html
 
-Trello board
-	https://trello.com/b/invvSZ7p/employeer-manager-v11
+Trello board: https://trello.com/b/invvSZ7p/employeer-manager-v11
 
-github
-	https://github.com/jytcr127/Employee-Manager-v2
+github: https://github.com/jytcr127/Employee-Manager-v2
+
+Postman collection: https://github.com/jytcr127/Employee-Manager-v2/blob/master/Employee%20Manager%20API%20practice.postman_collection.json
+	
 
 What’s included:
 Feature: Click employee name from employee list to bring up card with ids in ascending order, name, phone number, email address, and title
