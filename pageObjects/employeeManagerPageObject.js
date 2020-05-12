@@ -59,6 +59,7 @@ var employeeManagerCommands = {
             .click('@lastEmployeeListed')
             .pause(3000)
             .expect.element('@nameField').value.to.not.equal('This will be deleted')
+        return this
     },
     addAnEmployeeCard: function () {
         this
@@ -72,6 +73,7 @@ var employeeManagerCommands = {
             .expect.element('@emailField').value.to.equal('abc')
         this
             .expect.element('@titleField').value.to.equal('New Employee')
+        return this
 
     },
     changesNotSavedIfCancelIsClicked: function () {
@@ -86,6 +88,7 @@ var employeeManagerCommands = {
             .setValue('@titleField', 'Dog Whisperer')
             .click('@cancelButton')
             .expect.element('@nameField').value.to.not.equal(name);
+        return this
     },
     changesSavedAfterErrorsFixed: function (name, phoneNumber, email, title) {
         this
@@ -117,8 +120,7 @@ var employeeManagerCommands = {
             .expect.element('@titleField').value.to.equal(title)
         this
             .expect.element('@emailField').value.to.equal(email)
-        this
-            .end()
+        return this
     },
     IncorrectlyFilledFields: function () {
         this
@@ -127,17 +129,20 @@ var employeeManagerCommands = {
             .setValue('@nameField', 'aaaaabbbbbbbbbccccccccccdddddddddeeeeeeeefffffffffggggggggggg')
             .click('@saveButton')
             .assert.domPropertyEquals('input[name = "nameEntry"]', 'classList', ['materialInput', 'invalidInfo'])
+        return this
     },
     testASearchThatDoesNotMatchEmployee: function (nameToTest) {
         this
             .setValue('@searchBox', nameToTest)
             .expect.element('@firstEmployeeResultFromFilterSearch').text.to.equal('+ Add Employee')
+        return this
     },
     testASearchThatDoesMatchAnEmployee: function (nameToTest) {
         this
             .clearValue('@searchBox')
             .setValue('@searchBox', nameToTest)
             .expect.element('@firstEmployeeResultFromFilterSearch').text.to.equal('Annie Edison')
+        return this
     },
     reloadAPage: function (name, phoneNumber, email, title) {
         this
@@ -166,6 +171,7 @@ var employeeManagerCommands = {
         this
             .click('@lastEmployeeListed')
             .expect.element('@phoneField').to.have.value.that.equals(phoneNumber)
+        return this
     },
     testTheClearButtonFunctionality: function (highlyUnlikelyEmployeeName) {
         this
@@ -178,6 +184,7 @@ var employeeManagerCommands = {
             .click('@firstEmployeeResultFromFilterSearch')
             .pause(3000)
             .expect.element('@employeeInfoCard').text.to.not.contain("No Employee Selected")
+        return this
     },
     create5Employees: function (employeeName, employeePhone, employeeEmail, employeeTitle) {
         this

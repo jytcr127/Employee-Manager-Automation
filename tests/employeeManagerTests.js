@@ -12,7 +12,7 @@ module.exports = {
 
     'Test 1: Delete an employee card': browser => {
         employeeManagerPage
-            .waitForElementVisible('ul[class = "listContainer"]')
+            .waitForElementVisible('ul[class = "listContainer"]', 50000)
             .deleteAnEmployeeCard(browser)
     },
 
