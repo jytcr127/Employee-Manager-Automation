@@ -201,7 +201,7 @@
 							"    pm.response.to.be.ok;",
 							"});",
 							"pm.test(\"Text is correct\", function() {",
-							"    pm.expect(pm.response.text()).to.include(\"9999999999\")",
+							"    pm.expect(pm.response.text()).to.include(\"604\")",
 							"})"
 						],
 						"type": "text/javascript"
@@ -216,7 +216,7 @@
 					"raw": ""
 				},
 				"url": {
-					"raw": "https://peaceful-inlet-88854.herokuapp.com/api/employees/588?name=Annie Edison&email=iamnotannieedison@yahoo.co&title=FBI full time&phone=9999999999",
+					"raw": "https://peaceful-inlet-88854.herokuapp.com/api/employees/611?name=Annie Edison&email=iamnotannieedison@yahoo.com&title=FBI full time&phone=9999999999",
 					"protocol": "https",
 					"host": [
 						"peaceful-inlet-88854",
@@ -226,7 +226,7 @@
 					"path": [
 						"api",
 						"employees",
-						"588"
+						"611"
 					],
 					"query": [
 						{
@@ -235,7 +235,7 @@
 						},
 						{
 							"key": "email",
-							"value": "iamnotannieedison@yahoo.co"
+							"value": "iamnotannieedison@yahoo.com"
 						},
 						{
 							"key": "title",
