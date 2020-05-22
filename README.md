@@ -11,7 +11,7 @@ The information stored in the application will be saved in a database. Users sho
 
 ## Running the Project Instructions
 
-#### 1. Download Project Folder:
+#### 1. Download Project Folder
 
 
 #### 2. Install Nightwatch On Machine:
