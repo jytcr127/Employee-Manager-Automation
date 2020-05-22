@@ -11,19 +11,18 @@ The information stored in the application will be saved in a database. Users sho
 
 ## Running the Project Instructions
 
-#### Download Project Folder:
+#### 1. Download Project Folder:
 
-`git clone https://github.com/jytcr127/Employee-Manager-Automation.git`
 
-#### Install Nightwatch On Machine:
+#### 2. Install Nightwatch On Machine:
 
 `npm i -g nightwatch`
 
-#### Install chromedriver inside of project folder:
+#### 3. Install chromedriver inside of project folder:
 
 `npm i chromedriver`
 
-#### Execute the test in the project with the following command:
+#### 4. Execute the test in the project with the following command:
 
 `nightwatch`
  
