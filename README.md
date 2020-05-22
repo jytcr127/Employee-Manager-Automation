@@ -13,7 +13,7 @@ The information stored in the application will be saved in a database. Users sho
 
 #### Download Project Folder:
 
-`https://github.com/jytcr127/Employee-Manager-Automation.git`
+`git clone https://github.com/jytcr127/Employee-Manager-Automation.git`
 
 #### Install Nightwatch On Machine:
 
