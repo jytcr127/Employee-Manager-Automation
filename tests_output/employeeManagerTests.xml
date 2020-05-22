@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<testsuites errors="1"
+            failures="0"
+            tests="0">
+
+  <testsuite name="employeeManagerTests"
+    errors="1" failures="0" hostname="" id="" package="employeeManagerTests" skipped="10"
+    tests="0" time="0.000" timestamp="">
+  
+
+  
+    <system-err>
+      [0;31m  Error: An error occurred while retrieving a new session: &#34;session not created: This version of ChromeDriver only supports Chrome version 81&#34;[0m
+[0;90m       at endReadableNT (_stream_readable.js:1129:12)
+       at process._tickCallback (internal/process/next_tick.js:63:19)[0m
+[0;31m  Error: An error occurred while retrieving a new session: &#34;session not created: This version of ChromeDriver only supports Chrome version 81&#34;[0m
+[0;90m       at endReadableNT (_stream_readable.js:1129:12)
+       at process._tickCallback (internal/process/next_tick.js:63:19)[0m
+    </system-err>
+  
+
+  
+    
+    <testcase
+      name="Test 1: Delete an employee card" classname="employeeManagerTests">
+      <skipped />
+    </testcase>
+    
+    <testcase
+      name="Test 2: Edit an employee card" classname="employeeManagerTests">
+      <skipped />
+    </testcase>
+    
+    <testcase
+      name="Test 3: Create 5 employee cards" classname="employeeManagerTests">
+      <skipped />
+    </testcase>
+    
+    <testcase
+      name="Test 4: Confirm changes not saved if cancel button is clicked" classname="employeeManagerTests">
+      <skipped />
+    </testcase>
+    
+    <testcase
+      name="Test 5: Employee card changes saved after errors are fixed" classname="employeeManagerTests">
+      <skipped />
+    </testcase>
+    
+    <testcase
+      name="Test 6: Verify that inputs filled incorrectly have red underline represent by class name .invalidInfo which is added" classname="employeeManagerTests">
+      <skipped />
+    </testcase>
+    
+    <testcase
+      name="Test 7: Search Input by Name will not return any employees if no employee matches the search input text" classname="employeeManagerTests">
+      <skipped />
+    </testcase>
+    
+    <testcase
+      name="Test 8: Filtering search input by Name will return an employee if an employee name matches the text entered" classname="employeeManagerTests">
+      <skipped />
+    </testcase>
+    
+    <testcase
+      name="Test 9: Verify that changes made on an employee card persist even when user closes window and opens the application in a new browser session" classname="employeeManagerTests">
+      <skipped />
+    </testcase>
+    
+    <testcase
+      name="Test 10: Verifies that all employee cards will load and be visible after the clear button next to the search employees button is clicked" classname="employeeManagerTests">
+      <skipped />
+    </testcase>
+    
+  
+  </testsuite>
+</testsuites>
