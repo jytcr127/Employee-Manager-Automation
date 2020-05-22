@@ -5,9 +5,9 @@
 
   <testsuite name="employeeManagerTests"
     errors="0" failures="0" hostname="" id="" package="employeeManagerTests" skipped="0"
-    tests="10" time="72.60" timestamp="">
+    tests="10" time="72.45" timestamp="">
   
-    <testcase name="Test 1: Delete an employee card" classname="employeeManagerTests" time="16.43" assertions="3">
+    <testcase name="Test 1: Delete an employee card" classname="employeeManagerTests" time="16.50" assertions="3">
 
     
 
@@ -16,50 +16,7 @@
     
     </testcase>
   
-    <testcase name="Test 2: Edit an employee card" classname="employeeManagerTests" time="1.132" assertions="4">
-
-    
-
-    
-
-    
-
-    
-    </testcase>
-  
-    <testcase name="Test 3: Create 5 employee cards" classname="employeeManagerTests" time="33.36" assertions="20">
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
+    <testcase name="Test 2: Edit an employee card" classname="employeeManagerTests" time="1.141" assertions="4">
 
     
 
@@ -70,12 +27,55 @@
     
     </testcase>
   
-    <testcase name="Test 4: Confirm changes not saved if cancel button is clicked" classname="employeeManagerTests" time="1.010" assertions="1">
+    <testcase name="Test 3: Create 5 employee cards" classname="employeeManagerTests" time="33.31" assertions="20">
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
 
     
     </testcase>
   
-    <testcase name="Test 5: Employee card changes saved after errors are fixed" classname="employeeManagerTests" time="4.367" assertions="4">
+    <testcase name="Test 4: Confirm changes not saved if cancel button is clicked" classname="employeeManagerTests" time="1.008" assertions="1">
+
+    
+    </testcase>
+  
+    <testcase name="Test 5: Employee card changes saved after errors are fixed" classname="employeeManagerTests" time="4.375" assertions="4">
 
     
 
@@ -86,22 +86,22 @@
     
     </testcase>
   
-    <testcase name="Test 6: Verify that inputs filled incorrectly have red underline represent by class name .invalidInfo which is added" classname="employeeManagerTests" time="0.9250" assertions="1">
+    <testcase name="Test 6: Verify that inputs filled incorrectly have red underline represent by class name .invalidInfo which is added" classname="employeeManagerTests" time="0.9300" assertions="1">
 
     
     </testcase>
   
-    <testcase name="Test 7: Search Input by Name will not return any employees if no employee matches the search input text" classname="employeeManagerTests" time="0.7890" assertions="1">
+    <testcase name="Test 7: Search Input by Name will not return any employees if no employee matches the search input text" classname="employeeManagerTests" time="0.7970" assertions="1">
 
     
     </testcase>
   
-    <testcase name="Test 8: Filtering search input by Name will return an employee if an employee name matches the text entered" classname="employeeManagerTests" time="0.6750" assertions="1">
+    <testcase name="Test 8: Filtering search input by Name will return an employee if an employee name matches the text entered" classname="employeeManagerTests" time="0.6820" assertions="1">
 
     
     </testcase>
   
-    <testcase name="Test 9: Verify that changes made on an employee card persist even when user closes window and opens the application in a new browser session" classname="employeeManagerTests" time="6.928" assertions="4">
+    <testcase name="Test 9: Verify that changes made on an employee card persist even when user closes window and opens the application in a new browser session" classname="employeeManagerTests" time="6.781" assertions="4">
 
     
 
@@ -112,7 +112,7 @@
     
     </testcase>
   
-    <testcase name="Test 10: Verifies that all employee cards will load and be visible after the clear button next to the search employees button is clicked" classname="employeeManagerTests" time="6.985" assertions="2">
+    <testcase name="Test 10: Verifies that all employee cards will load and be visible after the clear button next to the search employees button is clicked" classname="employeeManagerTests" time="6.927" assertions="2">
 
     
 
